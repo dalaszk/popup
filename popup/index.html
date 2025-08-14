@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxime Deschamps - Offre Spéciale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background image overlay -->
+    <div class="background-overlay"></div>
+    
+    <!-- Main content with blurred background -->
+    <div class="main-content">
+        <div class="background-image"></div>
+    </div>
+    
+    <!-- Pop-up modal -->
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="main-title">RÉDUCTION JUSQU'À 80%</h1>
+                <p class="subtitle">NOUS VOUS AVONS PRÉPARÉ UNE RÉDUCTION SPÉCIALE JUSQU'À 80 % SUR VOTRE PREMIER ACHAT</p>
+                <p class="description">ENREGISTREZ VOTRE EMAIL POUR RECEVOIR DE NOUVELLES OFFRES ET FAIRE DE BONS ACHATS</p>
+            </div>
+            
+            <div class="modal-body">
+                <form id="email-form" class="email-form">
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+                        <button type="submit" class="submit-btn">S'INSCRIRE</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="modal-footer">
+                <div class="discount-badge">
+                    <span class="discount-text">80% OFF</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Loading overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-spinner"></div>
+        <p>Redirection en cours...</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
